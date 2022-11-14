@@ -1,1 +1,22 @@
-<p>detail-patient works!</p>
+<div class="container">
+    <div class="row mt-5" *ngIf="patient">
+        <div class="col-md-4 mx-auto">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header text-center">
+                    Detalle
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>id: </b>{{patient.id}}</li>
+                    <li class="list-group-item"><b>Nombres: </b>{{patient.nombres}}</li>
+                    <li class="list-group-item"><b>Apellidos: </b>{{patient.apellidos}}</li>
+                    <li class="list-group-item"><b>Numero de cedula: </b>{{patient.num_id}}</li>
+                </ul>
+                <div class="card-footer">
+                    <button class="btn btn-outline-primary btn-block" (click)="volver()"><i
+                            class="fas fa-arrow-alt-circle-left"></i> Volver</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
